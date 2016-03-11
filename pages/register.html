@@ -1,0 +1,42 @@
+<div class="register">
+
+    <div class="container">
+        <div class="row">
+             <fieldset ng-disabled="isSaving">
+                <form name="registrationForm" ng-submit="register()" onsubmit="return false" class="col-xs-12 col-sm-12 col-sm-offset-0 col-md-offset-2 col-md-8 col-lg-8" novalidate>
+                    <h2 class="form-signin-heading">Create a profile</h2>
+                    <div class="form-group">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" class="form-control register-form" placeholder="Name" ng-model="name" ng-required="true" ng-maxlength="50">
+                        <div ng-show="registrationForm.name.$touched && registrationForm.name.$invalid" class="red">Please enter your name (less than 50 characters) </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="fname" class="sr-only">Father/Husband Name</label>
+                        <input type="text" id="fname" name="fname" class="form-control register-form" placeholder="Fathers Name" ng-model="fname" ng-required="true" ng-maxlength="50">
+                        <div ng-show="registrationForm.fname.$touched && registrationForm.fname.$invalid" class="red">Please enter your fathers/husbands name  (less than 50 characters)</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob" class="sr-only">DOB</label>
+                        <input id="dob" name="dob" ui-date="dateOptions" class="form-control register-form" placeholder="DOB" ng-model="dob" ng-required="true">
+                        <div ng-show="registrationForm.dob.$touched && registrationForm.dob.$invalid" class="red">Please enter DOB (MM/DD/YYYY)</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control register-form" placeholder="Email" ng-model="email" ng-required="true">
+                        <div ng-show="registrationForm.email.$touched && registrationForm.email.$invalid" class="red">Enter email in correct format (like a@a.com)</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile" class="sr-only">Mobile No.</label>
+                        <input type="number" id="mobile" name="mobile" class="form-control register-form" placeholder="Mobile Number" ng-model="mobile" ng-required="true" ng-minlength="10" ng-maxlength="10">
+                        <div ng-show="registrationForm.mobile.$touched && registrationForm.mobile.$invalid" class="red">Enter valid mobile number (only 10 digits)</div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="registerClick" ng-disabled="registrationForm.$invalid" class="btn btn-lg btn-info btn-block" value="Register" />
+                    </div>
+                </form>
+            </fieldset>
+          </div>
+    </div>
+
+</div>

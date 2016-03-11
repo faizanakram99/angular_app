@@ -1,0 +1,269 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #eee;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+}
+
+main {
+    min-height: 100%;
+    margin: 0 auto -166px;
+}
+
+.login {
+    padding-top: 40px;
+}
+
+.register {
+    padding-top: 100px;
+}
+
+.complete {
+    padding-top: 100px;
+}
+
+.profile {
+    padding-top: 100px;
+}
+
+.foot {
+    background-color: #525564;
+}
+
+.push {
+    height: 166px;
+}
+
+.logo {
+    margin-top: -12px;
+}
+
+.nav-top {
+    min-height: 65px;
+    background: #525564;
+}
+
+div.navbar-header {
+    height: 65px;
+}
+
+.nav-top li a {
+    height: 65px;
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+    border-right: 1px solid #444;
+}
+
+.nav-top li:first-child a {
+    border-left: 1px solid #444;
+}
+
+.nav-top li a:hover,
+.nav-top li a:focus,
+.nav-top li a:active {
+    background: deepskyblue;
+}
+
+.form-signin {
+    max-width: 350px;
+    color: #fff;
+    padding: 25px;
+    margin: 12% auto 0;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 3px 3px 5px #444, 3px -3px 5px #444, -3px -3px 5px #444, -3px 3px 5px #444;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="text"] {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-top: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+div.checkbox {
+    margin-top: 10px;
+}
+
+.red {
+    color: rgb(233, 60, 60);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#dob {
+    color: #333;
+}
+
+input:disabled {
+    cursor: not-allowed;
+    pointer-events: all !important;
+}
+
+
+/* ngAnimate effects*/
+
+.flip {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.flip.ng-enter {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+.flip.ng-enter-active {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip.ng-leave {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.flip.ng-leave-active {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+/*ngAnimate effects ends*/
+
+.img-error {
+    margin: 0 auto;
+}
+
+.error-div {
+    color: #888;
+    display: table;
+    font-family: sans-serif;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.error-section {
+    background: #eee;
+    display: table-cell;
+    vertical-align: middle;
+    margin: 2em auto;
+}
+
+.error-header {
+    color: #555;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.error-p {
+    margin: 0 auto;
+    width: 280px;
+}
+
+@media only screen and (max-width: 280px) {
+    .error-div,
+    .error-p {
+        width: 95%;
+    }
+    .error-header {
+        font-size: 1.5em;
+        margin: 0 0 0.3em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #navbar-main {
+        padding: 0;
+    }
+    .nav-top li a {
+        height: 40px;
+        padding: 10px 0;
+        font-weight: normal;
+        color: #fff;
+        font-size: 1em;
+        border-right: 0;
+        margin: 0;
+        border-bottom: 1px solid rgb(99, 102, 115);
+    }
+    .nav-top li:first-child a {
+        border-left: 0;
+    }
+    .nav-top li:last-child a {
+        border-bottom: 0;
+    }
+    .navbar button {
+        background-color: #888;
+        margin-top: 15px;
+    }
+    .navbar button:hover {
+        background: #333;
+    }
+    .navbar button span {
+        background: #fff;
+    }
+}

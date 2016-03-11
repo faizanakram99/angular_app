@@ -1,0 +1,27 @@
+<div class="login">
+    <div class="container">
+        <fieldset ng-disabled="isLoading">
+            <form name="signInForm" class="form-signin" id="myLogin" ng-submit="submit()" novalidate>
+                <h2 class="form-signin-heading">Please Sign In</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+
+                <input type="text" id="inputEmail" name="username" ng-focus="showMessage=true" class="form-control" placeholder="Username or Email address" ng-model="username" ng-required="true">
+                <div ng-show="signInForm.username.$touched && signInForm.username.$invalid" class="red">Please enter username {{usernameError}}</div>
+
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="inputPassword" name="password" ng-focus="showMessage=true" class="form-control" placeholder="Password" ng-model="password" ng-required="true">
+                <div ng-show="signInForm.password.$touched && signInForm.password.$invalid" class="red">Please enter password {{passwordError}}</div>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <div class="bold red" ng-hide="showMessage"> {{message}} </div>
+                <input id="loginClick" type="submit" class="btn btn-lg btn-info btn-block" ng-blur="showMessage=true" ng-disabled="signInForm.$invalid" value="Sign In" />
+            </form>
+        </fieldset>
+    </div>
+
+
+</div>
