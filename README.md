@@ -5,3 +5,6 @@
 - In the next stage you can add more screens. for e.g.,register  with basic information such as first name, fathers name, DOB, Email etc.
 - Finally user should be asked to accept the terms and conditions.
 - User should be able to view his profile.
+
+
+**NOTE : The application needs to be run on a server (local or remote) otherwise it won't work**
