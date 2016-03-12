@@ -8,5 +8,5 @@
 
 **NOTE**
 - The application needs to be run on a server (local or remote) otherwise it won't work.
-- The application uses **rest api** from [backand](backand.com) for backend services.
+- The application uses **rest api** from [backand](http://backand.com) for backend services.
 - The *username* is `admin` and *password* is `password1234`
