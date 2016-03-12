@@ -1,10 +1,12 @@
 # angular_app
-**My first Angular Application. It will contains these features**
+**My first Angular Application. It contains these features**
 - A single sign-on screen with key principle of authentication.
-- After successful sign-up it should take user to main page of application.
-- In the next stage you can add more screens. for e.g.,register  with basic information such as first name, fathers name, DOB, Email etc.
-- Finally user should be asked to accept the terms and conditions.
-- User should be able to view his profile.
+- After successful sign-up it takes user to main page of application.
+- The main page has two sections - one takes to registration page and other to view profiles page
+- The registration page creates a profile after the user accepts to the terms and conditions.
+- After registration, user is able to view list of registered profiles.
 
-
-**NOTE : The application needs to be run on a server (local or remote) otherwise it won't work**
+**NOTE**
+- The application needs to be run on a server (local or remote) otherwise it won't work.
+- The application uses **rest api** from [backand](backand.com) for backend services.
+- The *username* is `admin` and *password* is `password1234`
