@@ -33,10 +33,9 @@
 
     <header ng-include="'pages/header.html'" ng-show="loggedIn"></header>
 
-        <main ng-view class="flip" style="background:{{bg}}"></main>
+        <main ng-view class="slide" style="background:{{bg}}"></main>
 
-    <div class="push"></div>
-    <div class="foot" ng-include="'pages/footer.html'" ng-show="loggedIn"></div>
+
 
 
 
@@ -49,6 +48,7 @@
     <script src="js/vendor/angular.min.js"></script>
     <script src="js/vendor/angular-route.min.js"></script>
     <script src="js/vendor/angular-animate.min.js"></script>
+
     <script src="js/date.js"></script>
     <script src="js/main.js"></script>
 

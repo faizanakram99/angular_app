@@ -1,9 +1,27 @@
 <div class="home">
 
     <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 home-jumbo">
+                <a href="#/register">
+                    <img src="images/db.png" alt="db" class="img-responsive" />
 
+                    <p class="text-center">Create New Profile</p>
+                </a>
+            </div>
 
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 home-jumbo">
+                <a href="#/profile">
+                    <img src="images/user.png" alt="db" class="img-responsive" />
+                    <p class="text-center">View Registered Profiles</p>
+                </a>
+            </div>
+            <br />
+
+        </div>
 
     </div>
+    <div class="foot" ng-include="'pages/footer.html'" ng-show="loggedIn"></div>
+
 
 </div>
