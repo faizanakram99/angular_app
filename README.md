@@ -1,4 +1,8 @@
 # angular_app
+
+**Live Demo**
+- Click [here](https://faizanakram99.github.io/angular_app) to view live demo
+
 **My first Angular Application. It contains these features**
 - A single sign-on screen with key principle of authentication.
 - After successful sign-up it takes user to main page of application.
